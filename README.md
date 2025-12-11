@@ -4,8 +4,7 @@ Strategic data analysis to optimize credit card product features and marketing s
 | Tools | Data Source | Concepts | Deliverables |
 | :--- | :--- | :--- | :--- |
 | **SQL** (PostgreSQL/MySQL) | **[Financial Transactions Dataset](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets/data)** | Relational Modeling (ETL) | Interactive Tableau Dashboard |
-| **Tableau** (or PowerBI) | **Multi-file CSV/JSON** (Transactions, Users, Cards) | RFM Segmentation & Cohort Analysis | Project SQL Scripts (`.sql`) |
-| **Python** (for data loading/prep) | | Advanced Window Functions (e.g., `LAG`) | Documentation & Strategic Recommendations |
+| **Tableau** | **Multi-file CSV/JSON** (Transactions, Users, Cards) | RFM Segmentation & Cohort Analysis | Project SQL Scripts (`.sql`) |
 
 ---
 
