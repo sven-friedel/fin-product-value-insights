@@ -1,4 +1,4 @@
-# Card Product Value Optimizer: A Fintech Customer Segmentation Strategy
+# 💳Card Product Value Optimizer: A Fintech Customer Segmentation Strategy
 Strategic data analysis to optimize credit card product features and marketing spend based on Customer Lifetime Value (CLV) and behavior-based segmentation.
 
 | Tools | Data Source | Concepts | Deliverables |
@@ -9,7 +9,7 @@ Strategic data analysis to optimize credit card product features and marketing s
 
 ---
 
-### 1. Project Overview
+### 1. 📘Project Overview
 
 In the highly competitive Fintech sector, optimizing profitability requires shifting focus from simply increasing transaction *volume* to maximizing customer *value*. This project simulates the role of a Product Analyst at a digital bank tasked with optimizing the bank's credit card portfolio.
 
@@ -17,7 +17,7 @@ The central goal of this strategic initiative is to move beyond simple revenue r
 
 **Deliverables:** An end-to-end data pipeline in SQL resulting in a clean, customer-level fact table, and an interactive Tableau dashboard providing actionable recommendations for product feature enhancements and targeted marketing campaigns.
 
-### 2. Key Business Questions & Strategic Impact
+### 2. 💡Key Business Questions & Strategic Impact
 
 The analysis is designed to answer critical questions for the Card Services and Marketing teams:
 
@@ -26,7 +26,7 @@ The analysis is designed to answer critical questions for the Card Services and 
 3.  **Targeted Cross-Selling:** What is the primary spending behavior (Merchant Category Code / MCC) of our **Champion** customers, and what complementary financial products should be recommended to them?
 4.  **Dormancy Risk:** Which customer segments show high monetary value but low recency, indicating they are **At-Risk** of churn, and requiring immediate retention efforts?
 
-### 3. Project Structure and Data Pipeline
+### 3. 💾Project Structure and Data Pipeline
 
 This project demonstrates proficiency in Extract, Transform, and Load (ETL) processes entirely within a SQL environment before visualization.
 
@@ -39,7 +39,7 @@ This project demonstrates proficiency in Extract, Transform, and Load (ETL) proc
 
 
 
-### 4. Technical Deep Dive
+### 4. 🔧Technical Deep Dive
 
 The core challenge of this project involved advanced SQL concepts to transform raw data into a decision-ready format:
 
@@ -48,7 +48,7 @@ The core challenge of this project involved advanced SQL concepts to transform r
 * **Utilization Rate Calculation:** Implementing the formula `SUM(Transaction Amount) / Credit Limit` for various cohorts to assess the optimization of card features and spending limits.
 * **Window Functions (Optional):** Leveraging `LAG()` and `PARTITION BY card_id` to calculate **Transaction Velocity** (time between transactions), which can be analyzed for high-frequency user profiles.
 
-### 5. Visualizations & Final Deliverable
+### 5. 📊Visualizations & Final Deliverable
 
 The final output is the **RFM Segmenter Dashboard**, a tool that allows product managers to isolate customer segments for precise targeting.
 
