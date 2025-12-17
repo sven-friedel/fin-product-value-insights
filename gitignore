@@ -1,0 +1,7 @@
+# Ignore the Virtual Environment
+venv/
+.env
+
+# Ignore Data Folders
+Assets/Dataset/Raw_Dataset/*.csv
+Assets/Dataset/Clean_Dataset/*.csv
