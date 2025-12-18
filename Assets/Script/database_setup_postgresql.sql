@@ -69,16 +69,16 @@ CREATE TABLE IF NOT EXISTS Dim_Card (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS Fact_Transactions (
   id SERIAL NOT NULL, --PK
-  Dim_Card_Dim_Card_id INTEGER NOT NULL, --FK
-  Dim_Card_Dim_User_user_id INTEGER NOT NULL, --FK
   date TIMESTAMP WITHOUT TIME ZONE NULL, -- DATETIME becomes TIMESTAMP
+  Dim_Card_Dim_User_user_id INTEGER NOT NULL, --FK
+  Dim_Card_Dim_Card_id INTEGER NOT NULL, --FK
   amount DECIMAL(15, 2) NOT NULL, -- DECIMAL(2) changed to a more realistic size
   use_chip VARCHAR(45) NULL,
   merchant_id INTEGER NULL,
   merchant_city VARCHAR(45) NULL,
   merchant_state VARCHAR(45) NULL,
   zip INTEGER NULL,
-  mcc SMALLINT NULL, -- INT(4) non-standard; changed to SMALLINT
+  mcc SMALLINT NULL,
   errors VARCHAR(45) NULL,
 
   -- Composite Primary Key
