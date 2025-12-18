@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS Fact_Transactions (
   merchant_id INTEGER NULL,
   merchant_city VARCHAR(45) NULL,
   merchant_state VARCHAR(45) NULL,
-  zip INTEGER NULL,
+  zip VARCHAR(10) NULL, -- Changed zip from INT to VARCHAR to avoid leading 0s being cut off
   mcc SMALLINT NULL,
   errors VARCHAR(45) NULL,
 

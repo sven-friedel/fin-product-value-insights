@@ -8,4 +8,7 @@ df['amount'] = df['amount'].replace(r'[\$,]', '', regex=True).astype(float)
 #Fill in blanks in Merchant State with ONLINE
 df['merchant_state'] = df['merchant_state'].fillna('ONLINE')
 
+#Convert zip to a non float number
+df['zip'] = pd.to_numeric(df['zip'], errors='coerce').astype('Int64')
+
 df.to_csv('Assets/Dataset/Clean_Dataset/clean_transactions_data.csv', index=False)
