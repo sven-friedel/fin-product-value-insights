@@ -16,7 +16,6 @@ WITH user_metrics AS (
 ),
 rfm_scores AS (
     -- Step 2: Assign scores from 1-5 using NTILE
-    -- Note: For Recency, a lower number is better, so we order by recency DESC
     SELECT
         *,
         NTILE(5) OVER (ORDER BY recency DESC) as r_score,
