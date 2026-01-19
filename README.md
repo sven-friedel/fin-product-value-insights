@@ -25,7 +25,7 @@ The analysis is designed to answer critical questions for the Card Services and 
 3.  **Targeted Cross-Selling:** What is the primary spending behavior (Merchant Category Code / MCC) of our **Champion** customers, and what complementary financial products should be recommended to them?
 4.  **Dormancy Risk:** Which customer segments show high monetary value but low recency, indicating they are **At-Risk** of churn, and requiring immediate retention efforts?
 
-### 3. 💾Project Structure and Data Pipeline
+### 3. 💾Implementation Sequence
 
 This project demonstrates proficiency in Extract, Transform, and Load (ETL) processes entirely within a SQL environment before visualization.
 
