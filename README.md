@@ -3,8 +3,8 @@ Strategic data analysis to optimize credit card product features and marketing s
 
 | Tools | Data Source | Concepts | Deliverables |
 | :--- | :--- | :--- | :--- |
-| **SQL** (PostgreSQL) | **[Financial Transactions Dataset](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets/data)** | Relational Modeling (ETL) | [Interactive Tableau Dashboard](https://public.tableau.com/app/profile/sven.friedel/viz/Dashboard_17676766705190/CardCustomerDashboard) |
-| **Tableau** | **Multi-file CSV/JSON** (Transactions, Users, Cards) | RFM Segmentation & Cohort Analysis | Project SQL Scripts (`.sql`) |
+| **SQL** (PostgreSQL) | **[Financial Transactions Dataset](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets/data)** | Relational Modeling (ETL) | **Multi-file CSV/JSON** (Transactions, Users, Cards, Merchant Codes) | | Project SQL Scripts (`.sql`) |
+| **Tableau** | Same as above | RFM Segmentation & Cohort Analysis | [Interactive Tableau Dashboard](https://public.tableau.com/app/profile/sven.friedel/viz/Dashboard_17676766705190/CardCustomerDashboard)
 
 ---
 
@@ -36,17 +36,7 @@ This project demonstrates proficiency in Extract, Transform, and Load (ETL) proc
 | **3. Metric Calculation (SQL)** | **Segmentation** | Utilizing the aggregated customer table, the final RFM scores are assigned to each customer. This table feeds directly into Tableau. |
 | **4. Visualization (Tableau)** | **Reporting** | A final, interactive dashboard is created to dynamically display RFM segments, spending profiles, and comparative analysis of profitability between card products. |
 
-
-
-### 4. 🔧Technical Deep Dive
-
-The core challenge of this project involved advanced SQL concepts to transform raw data into a decision-ready format:
-
-* **Relational Joins:** Successfully merging four disparate datasets (Fact and Dimension tables) to enrich the transaction data with customer demographics and card metadata.
-* **RFM Logic Implementation:** Using `MAX(transaction_date)` and `DATE_DIFF` functions to programmatically calculate the **Recency** score—a metric critical for marketing effectiveness.
-* **Window Functions (Optional):** Leveraging `LAG()` and `PARTITION BY card_id` to calculate **Transaction Velocity** (time between transactions), which can be analyzed for high-frequency user profiles.
-
-### 5. 📊Visualizations & Final Deliverable
+### 4. 📊Visualizations & Final Deliverable
 
 The final output is the **[Card Customer Dashboard](https://public.tableau.com/app/profile/sven.friedel/viz/Dashboard_17676766705190/CardCustomerDashboard)**, a tool that allows product managers to isolate customer segments for precise targeting.
 
