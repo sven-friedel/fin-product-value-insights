@@ -1,9 +1,9 @@
-# 💳Card Product Value Optimizer: A Fintech Customer Segmentation Strategy
-Strategic data analysis to optimize credit card product features and marketing spend based on Customer Lifetime Value (CLV) and behavior-based segmentation.
+# 💳Card Product Value Optimizer: A Fintech Customer Segmentation Project
+Strategic data analysis to optimize credit card product features and marketing spend based on Customer Lifetime Value (CLV) and behavior-based segmentation using the dimensions RFM (recency, frequency and monetary).
 
 | Tools | Data Source | Concepts | Deliverables |
 | :--- | :--- | :--- | :--- |
-| **SQL** (PostgreSQL/MySQL) | **[Financial Transactions Dataset](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets/data)** | Relational Modeling (ETL) | Interactive Tableau Dashboard |
+| **SQL** (PostgreSQL) | **[Financial Transactions Dataset](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets/data)** | Relational Modeling (ETL) | [Interactive Tableau Dashboard](https://public.tableau.com/app/profile/sven.friedel/viz/Dashboard_17676766705190/CardCustomerDashboard) |
 | **Tableau** | **Multi-file CSV/JSON** (Transactions, Users, Cards) | RFM Segmentation & Cohort Analysis | Project SQL Scripts (`.sql`) |
 
 ---
