@@ -14,14 +14,14 @@ In the highly competitive Fintech sector, optimizing profitability requires shif
 
 The central goal of this strategic initiative is to move beyond simple revenue reporting and develop a data-driven model that identifies, segments, and quantifies the bank's most valuable customers.
 
-**Deliverables:** An end-to-end data pipeline in SQL resulting in a clean, customer-level fact table, and an interactive Tableau dashboard providing actionable recommendations for product feature enhancements and targeted marketing campaigns.
+**Deliverables:** An end-to-end data pipeline in SQL resulting in a clean, customer-level fact table, and an [interactive Tableau dashboard](https://public.tableau.com/app/profile/sven.friedel/viz/Dashboard_17676766705190/CardCustomerDashboard) providing actionable recommendations for product feature enhancements and targeted marketing campaigns.
 
 ### 2. 💡Key Business Questions & Strategic Impact
 
 The analysis is designed to answer critical questions for the Card Services and Marketing teams:
 
 1.  **Customer Segmentation & Value:** How can the entire customer base be segmented using **RFM (Recency, Frequency, Monetary)** logic, and which segments represent the highest Customer Lifetime Value (CLV) opportunity?
-2.  **Product Stickiness:** Do certain card types (e.g., Platinum vs. Gold) exhibit significantly different usage patterns, and is the credit limit setting optimal across these product tiers?
+2.  **Product Stickiness:** Do certain card brands (e.g., Mastercard vs. Visa) exhibit significantly different usage patterns?
 3.  **Targeted Cross-Selling:** What is the primary spending behavior (Merchant Category Code / MCC) of our **Champion** customers, and what complementary financial products should be recommended to them?
 4.  **Dormancy Risk:** Which customer segments show high monetary value but low recency, indicating they are **At-Risk** of churn, and requiring immediate retention efforts?
 
@@ -44,16 +44,15 @@ The core challenge of this project involved advanced SQL concepts to transform r
 
 * **Relational Joins:** Successfully merging four disparate datasets (Fact and Dimension tables) to enrich the transaction data with customer demographics and card metadata.
 * **RFM Logic Implementation:** Using `MAX(transaction_date)` and `DATE_DIFF` functions to programmatically calculate the **Recency** score—a metric critical for marketing effectiveness.
-* **Utilization Rate Calculation:** Implementing the formula `SUM(Transaction Amount) / Credit Limit` for various cohorts to assess the optimization of card features and spending limits.
 * **Window Functions (Optional):** Leveraging `LAG()` and `PARTITION BY card_id` to calculate **Transaction Velocity** (time between transactions), which can be analyzed for high-frequency user profiles.
 
 ### 5. 📊Visualizations & Final Deliverable
 
-The final output is the **RFM Segmenter Dashboard**, a tool that allows product managers to isolate customer segments for precise targeting.
+The final output is the **[Card Customer Dashboard](https://public.tableau.com/app/profile/sven.friedel/viz/Dashboard_17676766705190/CardCustomerDashboard)**, a tool that allows product managers to isolate customer segments for precise targeting.
 
 * **RFM Segment Matrix:** A heat map showing the number of customers and their average spending for each RFM group (e.g., Champions, Potential Loyalist, Can’t Lose Them).
-* **Spending Profile Treemap:** A drill-down visualization that displays the most popular MCCs for any selected customer segment, driving cross-sell strategies.
-* **Product Profitability Analysis:** A comparison of key metrics (Average Transaction Count, CLV Proxy) across different card tiers to inform rewards budget allocation.
+* **Spending Preferences:** A drill-down visualization that displays the most popular Merchants for any selected customer segment, driving cross-sell strategies.
+* **Card Brand Profitability Analysis:** A comparison of all offered Card Brands (Mastercard, Visa, Amex and Discover) across different Customer Segments to inform rewards budget allocation.
 
 
 
