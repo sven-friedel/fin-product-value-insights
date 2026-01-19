@@ -31,10 +31,11 @@ This project demonstrates proficiency in Extract, Transform, and Load (ETL) proc
 
 | Step | Focus | Description |
 | :--- | :--- | :--- |
-| **1. Data Modeling (SQL)** | **Integration** | The multi-file dataset (`transactions`, `users`, `cards`, `fraud_labels`) is loaded into a relational database schema. Multiple `JOIN` operations are performed to create a single, customer-level analytical table. |
-| **2. Feature Engineering (SQL)** | **Transformation** | Advanced SQL is used to transform raw transaction logs into behavioral metrics, including calculating the **Recency** metric, Total **Monetary** value, and creating **Categorical Spending Buckets** (Travel, Essentials, Discretionary). |
-| **3. Metric Calculation (SQL)** | **Segmentation** | Utilizing the aggregated customer table, the final RFM scores are assigned to each customer. This table feeds directly into Tableau. |
-| **4. Visualization (Tableau)** | **Reporting** | A final, interactive dashboard is created to dynamically display RFM segments, spending profiles, and comparative analysis of profitability between card products. |
+| **1. Data Cleaning (Python)** | **Data Quality** | The multi-file dataset (`transactions`, `users`, `cards`, `fraud_labels`) is pre cleaned using python scripts to ensure a consistent data quality is loaded into the database. The details on each cleaning operation are documented in the TODO:Add [data cleaning log] |
+| **2. Data Modeling (SQL)** | **Integration** | The multi-file dataset (`transactions`, `users`, `cards`, `fraud_labels`) is loaded into a relational database schema. Multiple `JOIN` operations are performed to create a single, customer-level analytical table. |
+| **3. Feature Engineering (SQL)** | **Transformation** | Advanced SQL is used to transform raw transaction logs into behavioral metrics, including calculating the **Recency** metric, Total **Monetary** value, and creating **Categorical Spending Buckets** (Travel, Essentials, Discretionary). |
+| **4. Metric Calculation (SQL)** | **Segmentation** | Utilizing the aggregated customer table, the final RFM scores are assigned to each customer. This table feeds directly into Tableau. |
+| **5. Visualization (Tableau)** | **Reporting** | A final, interactive dashboard is created to dynamically display RFM segments, spending profiles, and comparative analysis of profitability between card products. |
 
 ### 4. 📊Visualizations & Final Deliverable
 
