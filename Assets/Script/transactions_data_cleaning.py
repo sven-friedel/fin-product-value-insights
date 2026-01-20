@@ -2,7 +2,7 @@ import pandas as pd
 
 df = pd.read_csv('Assets/Dataset/Raw_Dataset/transactions_data.csv')
 
-# Remove $ from amount col
+# Remove $ from amount col and convert to numeric
 df['amount'] = df['amount'].replace(r'[\$,]', '', regex=True).astype(float)
 
 #Fill in blanks in Merchant State with ONLINE
